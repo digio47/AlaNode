@@ -16,6 +16,10 @@ mynode.controller('SiteConfigController',function($scope){
       {
          "name": "Contacts",
          "url": "/mynode/contacts"
+      },
+      {
+         "name": "Info",
+         "url": "/mynode/info"
       }
    ];
 });
@@ -24,9 +28,9 @@ mynode.controller('MyController', function($scope){
 
    $scope.name = "Davide";
    $scope.datas = {
-      "name":"Davide",
-      "lastname":"Milazzo",
-      "age":25,
-      "address":"Via simone cuccia, 46"
+      "name":"Mario",
+      "lastname":"Marrazzo",
+      "age":45,
+      "address":"Via simone lala, 6"
    }
 });
