@@ -26,7 +26,7 @@ mynode.controller('SiteConfigController',function($scope){
 
 mynode.controller('MyController', function($scope){
 
-   $scope.name = "Davide";
+   $scope.name = "Mario";
    $scope.datas = {
       "name":"Mario",
       "lastname":"Marrazzo",
