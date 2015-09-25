@@ -26,15 +26,20 @@ html(ng-app='mynode')
                             a(href="{{mitem.url}}") {{mitem.name}}
 
 
-        div(class="container",ng-controller="MyController")
-            div
-                span {{datas.name}}
-                br
-                span {{datas.lastname}}
-                br
-                span {{datas.age}}
-                br
-                span {{datas.address}}
+        div(class="container", ng-controller="MyController")
+            ul
+                li(ng-repeat="x in datas")
+                    span {{x.name}} &nbsp;
+                    span {{x.lastname}} &nbsp;
+                    span {{x.age}} &nbsp;
+                    span {{x.address}} &nbsp;
+                    br
+
+        div(class="container", ng-controller="UrlDatas")
+            ul
+                li(ng-repeat="y in records")
+                    span {{y.Name + '&nbsp;' + y.Country + '&nbsp;' + y.City}}
+                    br
 
         footer(class="footer")
             div(class="container")
