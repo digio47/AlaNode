@@ -11,15 +11,23 @@ mynode.controller('SiteConfigController',function($scope){
    $scope.menuitem = [
       {
          "name":"Home",
-         "url":"/mynode/"
+         "url":"/AlaNode/"
+      },
+      {
+        "name":"Digio",
+         "url":"/AlaNode/digio.html"
       },
       {
          "name": "Contacts",
-         "url": "/mynode/contacts"
+         "url": "/AlaNode/contacts.html"
       },
       {
          "name": "Info",
-         "url": "/mynode/info"
+         "url": "/AlaNode/info.html"
+      },
+      {
+         "name": "Login",
+         "url": "/AlaNode/login.html"
       }
    ];
 });
