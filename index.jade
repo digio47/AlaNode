@@ -1,47 +1,6 @@
-//  Created by sum on 21/09/15.
-   
-doctype html
-html(ng-app='mynode')
-    head
-        script(type="text/javascript", src="bower_components/jquery/dist/jquery.js")
-        script(type="text/javascript", src="bower_components/bootstrap/dist/js/bootstrap.js")
-        script(type="text/javascript", src="bower_components/angular/angular.js")
-        script(type="text/javascript", src="mynode.js")
+//
+   Created by sum on 03/10/15.
+extends layout.jade
 
-        link(rel="stylesheet",href="bower_components/bootstrap/dist/css/bootstrap.css")
-    body
-        nav(class="navbar navbar-default navbar-bold" id="w0" ng-controller="SiteConfigController" role="navigation")
-            div(class="container")
-                div(class="navbar-header")
-                    button(type="button" class="navbar-toggle" data-toggle="collapse" data-target="w0-collapse")
-                        span(class="sr-only") Toggle Navigation
-                        span(class="icon-bar")
-                        span(class="icon-bar")
-                        span(class="icon-bar")
-                    a(class="navbar-brand" href="/mynode") {{title}}
-                div(id="w0-collapse" class="collapse navbar-collapse")
-                    ul(id="w1" class="navbar-nav nav")
-                    ul(id="w2" class="navbar-nav navbar-right nav")
-                        li(ng-repeat="mitem in menuitem")
-                            a(href="{{mitem.url}}") {{mitem.name}}
-
-
-        div(class="container", ng-controller="MyController")
-            ul
-                li(ng-repeat="x in datas")
-                    span {{x.name}} &nbsp;
-                    span {{x.lastname}} &nbsp;
-                    span {{x.age}} &nbsp;
-                    span {{x.address}} &nbsp;
-                    br
-
-        div(class="container", ng-controller="UrlDatas")
-            ul
-                li(ng-repeat="y in records")
-                    span {{y.Name + '&nbsp;' + y.Country + '&nbsp;' + y.City}}
-                    br
-
-        footer(class="footer")
-            div(class="container")
-                p(class="pull-right") Lato destro
-                p(class="pull-left") Lato sinitro
+block body
+   h1 Choose a voice from the top menu

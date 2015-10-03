@@ -1,0 +1,12 @@
+//
+   Created by sum on 03/10/15.
+
+extends layout.jade
+block body
+    div(class="container", ng-controller="MyController")
+        form(role="form")
+            div(class="form-group")
+              input(type="text",placeholder="username")
+            div(class="form-group")
+                input(type="pasword",placeholder="password")
+            input(type="submit",value="Login")

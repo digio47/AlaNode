@@ -1,0 +1,18 @@
+//
+   Created by sum on 03/10/15.
+
+extends layout.jade
+block body
+   div(class="container", ng-controller="MyController")
+      ul
+         li(ng-repeat="x in datas")
+            span {{x.name}} &nbsp;
+            span {{x.lastname}} &nbsp;
+            span {{x.age}} &nbsp;
+            span {{x.address}} &nbsp;
+            br
+   div(class="container", ng-controller="UrlDatas")
+      ul
+         li(ng-repeat="y in records")
+            span {{y.Name + '&nbsp;' + y.Country + '&nbsp;' + y.City}}
+            br
