@@ -1,8 +1,6 @@
 /**
  * Created by sum on 21/09/15.
  */
-
-
 var mynode = angular.module("mynode",[]);
 
 mynode.controller('SiteConfigController',function($scope){
@@ -45,4 +43,8 @@ mynode.controller('UrlDatas', function($scope, $http){
        .success(function(response) {
           $scope.records = response.records;
        });
+});
+
+mynode.controller('LoginController',function($scope,$http){
+
 });

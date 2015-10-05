@@ -23,6 +23,11 @@
     "postinstall": "bower install"
   },
   "dependencies": {
-    "mongoose": "~4.1.9"
+    "mongoose": "~4.1.9",
+    "requirejs": "~2.1.20",
+    "locomotive-mongoose": "~0.1.0",
+    "require": "~2.4.20",
+    "module": "0.0.1",
+    "browserify": "~11.2.0"
   }
 }
